@@ -1,0 +1,116 @@
+/* Requirements in readme.md
+body
+- background:        rgb(244, 248, 249)
+
+tweet
+- background:        rgb(255, 255, 255)
+- border:            rgb(225, 232, 237)
+- user name:         rgb(0, 0, 0)
+- user account:      rgb(104, 109, 129)
+- text:              rgb(0, 0, 0)
+- date:              rgb(101, 116, 127)
+- bottom text color: rgb(105, 120, 130)
+- follow button:     rgb(85, 172, 238)
+```
+
+- Finally, the font is "Helvetica".
+
+*/
+
+body{
+  background: rgb(244, 248, 249);
+  font-family: Helvetica, Arial;
+}
+.tweet-container {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(225, 232, 237);
+  border-radius: 4px;
+  margin: 0 auto;
+  max-width: 520px;
+  overflow: hidden;
+  padding: 20px 20px 11px 20px;
+}
+.tweet-header{
+  position: relative;
+}
+.tweet-avatar img{
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  margin-right: 3px;
+}
+.tweet-author{
+  position: absolute;
+  font-weight: 700;
+}
+.tweet-author .account-logo{
+  height: 17px;
+  margin: 0 4px 0 5px;
+  width: 8px;
+}
+.tweet-author .validated-account{
+  height: 20px;
+  margin-left: 2px;
+  vertical-align: text-bottom;
+}
+.tweet-author-name{
+  color: rgb(104, 109, 129);
+  font-size: 14px;
+}
+.tweet-follow{
+  float: right;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(85, 172, 238);
+  border: 1px solid rgb(85, 172, 238);
+  border-radius: 4px;
+  padding: 5.5px 13px 6.5px 11.5px;
+}
+.tweet-follow img{
+  margin-right: 5px;
+  position: relative;
+  top:2px;
+  width: 1em;
+}
+.date{
+  color: rgb(101, 116, 127);
+  font-size: 14px;
+  line-height: 0em;
+}
+ul{
+  margin: 23px 0 0 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  font-size: 14px;
+}
+ul li.tweet-action{
+  display: inline-block;
+  color: rgb(105, 120, 130);
+}
+ul li.tweet-action span{
+  vertical-align: super;
+}
+.icon{
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: text-bottom;
+}
+.icon-reply{
+  width: 16px;
+  height: 18px;
+  background-image: url('img/reply.jpg');
+}
+.icon-retweet{
+  margin-left: 14px;
+  width: 19px;
+  height: 19px;
+  background-image: url('img/retweet.jpg');
+}
+.icon-heart {
+  margin-left: 14px;
+  width: 14px;
+  height: 20px;
+  background-image: url('img/favorite.jpg');
+}
